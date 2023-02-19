@@ -1,0 +1,4 @@
+{
+  "/taxes/:id/form": "/inputFields",
+  "/tax/:id/form": "/submissions"
+}

@@ -1,0 +1,157 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "santiago",
+      "last_name": "sarmiento",
+      "password": "123asd"
+    },
+    {
+      "name": "santiago2",
+      "last_name": "sarmiento",
+      "password": "123asd",
+      "id": 2
+    }
+  ],
+  "taxes": [
+    {
+      "id": "1",
+      "name": "Tax season 2023",
+      "year": "2023",
+      "active": true
+    },
+    {
+      "id": "2",
+      "name": "Tax season 2022",
+      "year": "2022",
+      "active": false
+    },
+    {
+      "id": "3",
+      "name": "Tax season 2021",
+      "year": "2021",
+      "active": false
+    },
+    {
+      "id": "4",
+      "name": "Tax season 2020",
+      "year": "2020",
+      "active": true
+    },
+    {
+      "id": "5",
+      "name": "Tax season 2019",
+      "year": "2019",
+      "active": false
+    }
+  ],
+  "inputFields": [
+    {
+      "id": "name",
+      "label": "Name",
+      "placeholder": "Your first name",
+      "type": "text",
+      "maxLength": 20
+    },
+    {
+      "id": "surname",
+      "label": "Surname",
+      "placeholder": "Your last name",
+      "type": "text",
+      "maxLength": 40
+    },
+    {
+      "id": "age",
+      "label": "Age",
+      "placeholder": "Your age",
+      "type": "number"
+    },
+    {
+      "id": "picture",
+      "label": "Picture",
+      "type": "picture"
+    }
+  ],
+  "submissions": [
+    {
+      "name": "santiago",
+      "surname": "sarmiento",
+      "age": "25",
+      "taxId": "1",
+      "year": "2023",
+      "id": 2
+    },
+    {
+      "name": "juan",
+      "surname": "carlos",
+      "age": "35",
+      "taxId": "4",
+      "year": "2020",
+      "id": 3
+    },
+    {
+      "name": "maria",
+      "surname": "ines",
+      "age": "43",
+      "taxId": "4",
+      "year": "2020",
+      "id": 4
+    },
+    {
+      "name": "ignacio",
+      "surname": "venier",
+      "age": "24",
+      "taxId": "4",
+      "year": "2020",
+      "id": 5
+    },
+    {
+      "name": "juan",
+      "surname": "diaz",
+      "age": "30",
+      "taxId": "3",
+      "year": "2021",
+      "id": 6
+    },
+    {
+      "name": "victoria",
+      "surname": "furlan",
+      "age": "20",
+      "taxId": "2",
+      "year": "2022",
+      "id": 7
+    },
+    {
+      "name": "mauricio",
+      "surname": "sosa",
+      "age": "38",
+      "taxId": "5",
+      "year": "2019",
+      "id": 8
+    },
+    {
+      "name": "rodrigo",
+      "surname": "lanata",
+      "age": "65",
+      "taxId": "4",
+      "year": "2020",
+      "id": 9
+    },
+    {
+      "name": "juan",
+      "surname": "carlos",
+      "age": "47",
+      "taxId": "2",
+      "year": "2022",
+      "id": 10
+    },
+    {
+      "name": "florencia",
+      "age": "25",
+      "surname": "dominguez",
+      "taxId": "3",
+      "year": "2021",
+      "id": 11
+    }
+  ]
+}
