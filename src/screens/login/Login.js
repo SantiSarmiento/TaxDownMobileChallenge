@@ -46,7 +46,9 @@ const Login = ({ navigation }) => {
     return (
         <VStack h={"100%"} alignItems={"center"} justifyContent={"space-between"}>
             <Box alignItems={"center"} >
-                <Image resizeMode={"center"} source={require('../../../assets/logo.png')} alt="Logo" />
+                <Box ml={5} mr={5}>
+                    <Image resizeMode={"center"} source={require('../../../assets/logo.png')} alt="Logo" />
+                </Box>
                 <CustomInput holder={"Name"} value={user.name} onChange={(text) => setUser({ ...user, name: text })} variant={"underlined"} type={"text"} />
                 <CustomInput holder={"Password"} value={user.password} onChange={(text) => setUser({ ...user, password: text })} variant={"underlined"} type={showPassword ? "text" : "password"} rigthIcon={showPassword ? "ios-eye-off-outline" : "ios-eye-outline"} iconCallBack={() => setShowPassword(!showPassword)} />
 

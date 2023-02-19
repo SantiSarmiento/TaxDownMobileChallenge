@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Image, VStack } from 'native-base'
+import { Box, Image, VStack } from 'native-base'
 import { CustomSpinner } from "../../components/spinner/Spiner";
 import { useDispatch, useSelector } from 'react-redux'
 import { syncUpSubmissions } from '../../store/submissions/submissionsSlice'
@@ -50,7 +50,9 @@ const Loading = ({ navigation }) => {
 
     return (
         <VStack bgColor={"white"} alignItems={"center"} justifyContent={"center"} h={"100%"}>
-            <Image resizeMode={"center"} source={require('../../../assets/logo.png')} alt="Logo" />
+            <Box ml={5} mr={5}>
+                <Image resizeMode={"center"} source={require('../../../assets/logo.png')} alt="Logo" />
+            </Box>
             <CustomSpinner color={"#99f1bd"} size={"lg"} />
         </VStack>
     )
