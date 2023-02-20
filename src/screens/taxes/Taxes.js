@@ -47,6 +47,7 @@ const Taxes = () => {
                         return <ToastAlert status={"success"} variant={"left-accent"} title={"Submission deleted"} description={"The submission was deleted successfully"} />;
                     }
                 })
+                setSearchText("")
             })
             .catch((error) => {
                 console.log(error)

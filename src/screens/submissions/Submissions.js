@@ -186,10 +186,10 @@ const Submissions = ({ route }) => {
                                                         </Pressable>
                                                 }
                                                 <HStack mt={10} w={"85%"} justifyContent={"space-between"}>
-                                                    <Box w={"35%"}>
+                                                    <Box w={"45%"}>
                                                         <CustomButtom text={"Take photo"} size={"sm"} callBack={() => takePhoto()} />
                                                     </Box>
-                                                    <Box w={"35%"}>
+                                                    <Box w={"45%"}>
                                                         <CustomButtom text={"Select from galery"} size={"sm"} callBack={() => openGalery()} />
                                                     </Box>
                                                 </HStack>
