@@ -9,6 +9,7 @@ import { CustomInput } from "../../components/input/Input";
 import { CustomSpinner } from "../../components/spinner/Spiner";
 import ToastAlert from "../../components/toast/CustomToast";
 import { insertSubmissions } from "../../store/submissions/submissionsSlice";
+import ImagePicker from "./components/ImagePicker";
 
 const Submissions = ({ route }) => {
 
@@ -168,32 +169,7 @@ const Submissions = ({ route }) => {
                                         )
                                     } else {
                                         return (
-                                            <Box key={i} alignItems={"center"} w={"100%"}>
-                                                {
-                                                    photoUrl !== null
-                                                        ?
-                                                        <Image
-                                                            mt={4}
-                                                            source={{
-                                                                uri: photoUrl
-                                                            }}
-                                                            alt="image"
-                                                            size="2xl"
-                                                        />
-                                                        :
-                                                        <Pressable onPress={() => takePhoto()} >
-                                                            <Image resizeMode={"center"} source={require('../../../assets/camera.png')} alt="camera" />
-                                                        </Pressable>
-                                                }
-                                                <HStack mt={10} w={"85%"} justifyContent={"space-between"}>
-                                                    <Box w={"45%"}>
-                                                        <CustomButtom text={"Take photo"} size={"sm"} callBack={() => takePhoto()} />
-                                                    </Box>
-                                                    <Box w={"45%"}>
-                                                        <CustomButtom text={"Select from galery"} size={"sm"} callBack={() => openGalery()} />
-                                                    </Box>
-                                                </HStack>
-                                            </Box>
+                                            <ImagePicker key={i} photoUrl={photoUrl} takePhoto={() => takePhoto()} openGalery={() => openGalery()} />
                                         )
 
                                     }
