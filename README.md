@@ -8,4 +8,5 @@ npm install -g json-server
 json-server ./db/db.json --routes ./db/routes.json
 npx react-native run-android
 ```
+You will need to open 2 terminals, one for  **json-server**  and the other one for **react-native**
 
